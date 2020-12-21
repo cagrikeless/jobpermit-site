@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>OpTiiM | Web Application</title>
+    <title>Update | UI</title>
 
     <!-- Meta-Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">

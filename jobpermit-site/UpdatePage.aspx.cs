@@ -18,9 +18,9 @@ namespace jobpermit_site
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            int ID = Convert.ToInt32(Request.QueryString["ID"].ToString());
+            int z = Convert.ToInt32(Request.QueryString["ID"].ToString());
             DatabaseTableAdapters.TBLADMINTableAdapter dt = new DatabaseTableAdapters.TBLADMINTableAdapter();
-            TextBox1.Text = ID.ToString();
+            TextBox1.Text = z.ToString();
             TextBox1.Enabled = false;
 
             if (Page.IsPostBack == false)
