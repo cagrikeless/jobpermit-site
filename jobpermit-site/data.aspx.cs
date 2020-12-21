@@ -11,7 +11,10 @@ namespace jobpermit_site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+            DatabaseTableAdapters.TBLADMINTableAdapter dt = new DatabaseTableAdapters.TBLADMINTableAdapter();
+            usersRepeater.DataSource = dt.getUsers();
+            usersRepeater.DataBind();
         }
     }
 }
