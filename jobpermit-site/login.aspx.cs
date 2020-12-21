@@ -15,6 +15,13 @@ namespace jobpermit_site
         {
 
         }
+        public static class PageUtility
+        {
+            public static void MessageBox(System.Web.UI.Page page, string strMsg)
+            {
+                ScriptManager.RegisterClientScriptBlock(page, page.GetType(), "alertMessage", "alert('" + strMsg + "')", true);
+            }
+        }
 
         protected void btn_Submit_Click(object sender, EventArgs e)
         {
@@ -32,7 +39,7 @@ namespace jobpermit_site
             }
             else
             {
-                Response.Write("Wrong email or password.");
+                PageUtility.MessageBox(this, "Wrong email or password try again please. !");
             }
             con.Close();
         }
