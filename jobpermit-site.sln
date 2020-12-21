@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jobpermit-site", "jobpermit-site\jobpermit-site.csproj", "{38E0B353-3AB1-4497-8603-1B2E099BB2CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E0B353-3AB1-4497-8603-1B2E099BB2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E0B353-3AB1-4497-8603-1B2E099BB2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E0B353-3AB1-4497-8603-1B2E099BB2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E0B353-3AB1-4497-8603-1B2E099BB2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2004679C-DBB1-460B-B57F-B1B0C7BDC26E}
+	EndGlobalSection
+EndGlobal
