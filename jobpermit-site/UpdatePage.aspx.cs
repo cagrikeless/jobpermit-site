@@ -9,6 +9,13 @@ namespace jobpermit_site
 {
     public partial class UpdatePage : System.Web.UI.Page
     {
+        public static class PageUtility
+        {
+            public static void MessageBox(System.Web.UI.Page page, string strMsg)
+            {
+                ScriptManager.RegisterClientScriptBlock(page, page.GetType(), "alertMessage", "alert('" + strMsg + "')", true);
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             int ID = Convert.ToInt32(Request.QueryString["ID"].ToString());
@@ -27,8 +34,16 @@ namespace jobpermit_site
         protected void Button1_Click(object sender, EventArgs e)
         {
             DatabaseTableAdapters.TBLADMINTableAdapter dt = new DatabaseTableAdapters.TBLADMINTableAdapter();
-            dt.updateUsers(TextBox2.Text,TextBox3.Text,Convert.ToInt32(TextBox1.Text));
-            Response.Redirect("data.aspx");
+            if (TextBox3.Text == TextBox4.Text)
+            {
+                dt.updateUsers(TextBox2.Text, TextBox3.Text, Convert.ToInt32(TextBox1.Text));
+                Response.Redirect("data.aspx");
+            }
+            else
+            {
+                PageUtility.MessageBox(this, "Passwords do not match");
+
+            }
         }
     }
 }

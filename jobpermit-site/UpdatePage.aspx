@@ -40,16 +40,15 @@
                 <form action="#" method="post" runat="server">
                     <asp:TextBox ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
                     <asp:TextBox ID="TextBox2" runat="server" placeholder="Username"></asp:TextBox>
-                    <asp:TextBox ID="TextBox3" runat="server" placeholder="********" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" placeholder="********" ></asp:TextBox>
                     <asp:TextBox ID="TextBox4" runat="server" placeholder="********" ></asp:TextBox>
                     <asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" />
-
                 </form>
             </div>
 
             <!--footer-->
             <div class="footer-w3l">
-                <p>&copy;Copyright 2020 OPTiiM. All rights reserved.</a></p>
+                <p>&copy;All rights reserved.</p>
             </div>
             <!--//footer-->
 
